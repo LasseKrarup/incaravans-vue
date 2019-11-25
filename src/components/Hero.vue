@@ -1,7 +1,12 @@
 <template>
   <div class="hero-container">
     <div class="video-container">
-      <video v-if="video" alt="Background video for the In Caravans header" autoplay loop>
+      <video
+        v-if="video"
+        alt="Background video for the In Caravans header"
+        autoplay="true"
+        loop="true"
+      >
         <source :src="require('@/assets/' + path)" type="video/mp4" />
       </video>
       <v-img
@@ -11,7 +16,7 @@
         alt="Background image for the In Caravans header"
       ></v-img>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay" :style="{backgroundColor: 'rgba(0,0,0,' + overlayOpacity + ')'}"></div>
     <div class="hero-content">
       <h1>{{title}}</h1>
       <h2>{{subtitle}}</h2>
@@ -29,11 +34,15 @@ export default Vue.extend({
     subtitle: String,
     video: {
       type: Boolean,
-      required: true
+      default: false
     },
     path: {
       type: String,
       required: true
+    },
+    overlayOpacity: {
+      type: String,
+      default: "0.4"
     }
   }
 });
@@ -84,7 +93,6 @@ h2 {
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100vh;
   z-index: 1;

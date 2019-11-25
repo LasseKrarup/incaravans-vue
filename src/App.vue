@@ -4,18 +4,21 @@
     <v-content>
       <router-view></router-view>
     </v-content>
+    <Footer :icons="footerIcons"></Footer>
   </v-app>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import NavigationDrawer from "@/components/NavigationDrawer.vue";
+import Footer from "@/components/Footer.vue";
 
 export default Vue.extend({
   name: "App",
 
   components: {
-    NavigationDrawer
+    NavigationDrawer,
+    Footer
   },
 
   data: () => ({
@@ -40,6 +43,20 @@ export default Vue.extend({
         path: "/contact",
         icon: "phone"
       }
+    ],
+    footerIcons: [
+      {
+        icon: "home",
+        href: "/"
+      },
+      {
+        icon: "facebook",
+        href: "https://www.facebook.com/InCaravans/"
+      },
+      {
+        icon: "instagram",
+        href: "https://www.instagram.com/incaravans/"
+      }
     ]
   })
 });
@@ -50,6 +67,10 @@ export default Vue.extend({
 
 * {
   box-sizing: border-box;
+}
+
+.v-application {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 h1 {
