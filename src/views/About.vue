@@ -48,8 +48,13 @@
           - guitar &amp; keys
         </p>
       </Section>
-      <Section>
-        <v-img alt="In Caravans in a pavillion" src="@/assets/incaravans-pavillon.jpg" width="100%"></v-img>
+      <Section prominent>
+        <v-img
+          height="300px"
+          alt="In Caravans in a pavillion"
+          src="@/assets/incaravans-pressfoto1.jpg"
+          width="100%"
+        ></v-img>
       </Section>
     </Row>
   </div>

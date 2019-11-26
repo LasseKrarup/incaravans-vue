@@ -1,14 +1,11 @@
 <template>
   <div class="hero-container">
     <div class="video-container">
-      <video
-        v-if="video"
-        alt="Background video for the In Caravans header"
-        autoplay="true"
-        loop="true"
-      >
-        <source :src="require('@/assets/' + path)" type="video/mp4" />
-      </video>
+      <v-img v-if="video" min-height="100%" min-width="100%">
+        <video alt="Background video for the In Caravans header" autoplay="true" loop="true">
+          <source :src="require('@/assets/' + path)" type="video/mp4" />
+        </video>
+      </v-img>
       <v-img
         v-if="!video"
         :src="require('@/assets/' + path)"
