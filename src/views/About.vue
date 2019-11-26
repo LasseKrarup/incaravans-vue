@@ -4,20 +4,18 @@
       title="About"
       subtitle="Information about In Caravans"
       path="incaravans-train1.jpg"
-      overlay-opacity="0.6"
+      overlay-opacity="0.5"
     />
     <Row>
       <Section title="The Band">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus, ea debitis! Tempora beatae veniam quo impedit
-        officiis aspernatur quam a omnis praesentium laborum incidunt
-        fuga delectus doloremque reprehenderit ducimus, dolorum
-        dignissimos quidem! Excepturi id est adipisci neque accusantium,
-        eius veniam, exercitationem suscipit
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aliquid recusandae at possimus, earum adipisci rem deleniti sequi
         <span
           class="accent--text"
-        >expedita</span> quia doloribus
-        provident facilis? Ratione, possimus. Quis!
+        >voluptates</span>.
+        Ab quisquam vel repellat delectus nulla itaque quibusdam deleniti, voluptates et.
+        Accusantium exercitationem amet corrupti, repudiandae, reiciendis aperiam dolores, necessitatibus earum facilis animi recusandae.
+        Ullam atque inventore quisquam dolorum perspiciatis deserunt amet.
       </Section>
       <Section title="The Vision">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
@@ -28,33 +26,19 @@
         temporibus blanditiis officia laborum natus, dolorum
         ratione!
       </Section>
-    </Row>
-    <Row>
-      <Section title="The Crew">
-        <p>
-          <span class="text-capitalise accent--text">Lasse Krarup</span>
-          - drums &amp; SPD-SX
-          <br />
-          <span class="text-capitalise accent--text">Sebastian Krogh</span>
-          - bass
-          <br />
-          <span class="text-capitalise accent--text">Magnus Barslund</span>
-          - vocals
-          <br />
-          <span class="text-capitalise accent--text">Søren Larsen</span>
-          - guitar and boat
-          <br />
-          <span class="text-capitalise accent--text">Niels Langeland</span>
-          - guitar &amp; keys
-        </p>
-      </Section>
       <Section prominent>
         <v-img
-          height="300px"
-          alt="In Caravans in a pavillion"
+          alt="Press photo of In Caravans"
           src="@/assets/incaravans-pressfoto1.jpg"
           width="100%"
         ></v-img>
+        <p class="member-paragraph">
+          <span class="l2r">Left to right:</span>
+          <span v-for="(member, idx) in members" :key="idx" cols="12" sm="4" dense>
+            <span class="accent--text">{{ member.name }}</span>
+            <span class="disabled--text">({{ member.instrument }})</span>
+          </span>
+        </p>
       </Section>
     </Row>
   </div>
@@ -72,8 +56,47 @@ export default Vue.extend({
     Hero,
     Row,
     Section
-  }
+  },
+  data: () => ({
+    members: [
+      {
+        name: "Magnus Barslund",
+        instrument: "vocals"
+      },
+      {
+        name: "Lasse Herold Krarup",
+        instrument: "drums"
+      },
+      {
+        name: "Søren Larsen",
+        instrument: "guitar & boats"
+      },
+      {
+        name: "Sebastian Gall Hede Krogh",
+        instrument: "bass"
+      },
+      {
+        name: "Niels Langeland",
+        instrument: "guitar & synths"
+      }
+    ]
+  })
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.member-paragraph {
+  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+
+  > span {
+    margin-right: 12px;
+  }
+}
+.l2r {
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+</style>

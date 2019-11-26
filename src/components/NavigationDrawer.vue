@@ -32,12 +32,7 @@ export default Vue.extend({
   },
   data: () => ({
     drawer: false
-  }),
-  methods: {
-    test: function(item: any) {
-      console.log(item);
-    }
-  }
+  })
 });
 </script>
 

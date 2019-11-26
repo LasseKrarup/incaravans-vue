@@ -1,11 +1,18 @@
 <template>
-  <v-col cols="12" :sm="prominent === true ? 12 : 5" class="mt-12 pa-xs-6">
-    <div>
-      <h3 :class="titleStyle + '--text'">{{ title }}</h3>
-      <slot>
-        <p></p>
-      </slot>
-    </div>
+  <v-col cols="12" :sm="prominent === true ? 11 : 5" class="mt-12 pa-xs-6">
+    <v-lazy
+      v-model="isActive"
+      :options="{
+          threshold: 1
+        }"
+      transition="scroll-y-reverse-transition"
+      min-height="200"
+    >
+      <div>
+        <h3 v-if="title !== undefined" :class="titleStyle + '--text'">{{ title }}</h3>
+        <slot></slot>
+      </div>
+    </v-lazy>
   </v-col>
 </template>
 
@@ -15,7 +22,10 @@ import Vue from "vue";
 export default Vue.extend({
   name: "Section",
   props: {
-    title: String,
+    title: {
+      type: String,
+      default: undefined
+    },
     titleStyle: {
       type: String,
       default: "primary"
@@ -24,7 +34,10 @@ export default Vue.extend({
       type: Boolean,
       default: false
     }
-  }
+  },
+  data: () => ({
+    isActive: false
+  })
 });
 </script>
 

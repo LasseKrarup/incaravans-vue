@@ -8,8 +8,11 @@
     />
 
     <Row>
-      <Section title="Explosive, but elegant, indie rock">
+      <Section title="Explosive indie psych rock">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, dignissimos asperiores! Voluptatum ab dolor, quam quae dolores suscipit quo in.</p>
+      </Section>
+      <Section title="Melodic and atmospheric">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam placeat illum ea fuga nesciunt mollitia maiores sequi, et eum, ab repudiandae eligendi excepturi quasi pariatur, dolores error quo commodi eos.</p>
       </Section>
     </Row>
   </div>
