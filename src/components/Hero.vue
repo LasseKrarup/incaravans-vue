@@ -2,12 +2,18 @@
   <div class="hero-container">
     <div class="video-container">
       <v-img v-if="video" min-height="100%" min-width="100%">
-        <video alt="Background video for the In Caravans header" autoplay="true" loop="true">
-          <source :src="require('@/assets/' + path)" type="video/mp4" />
-        </video>
+        <video
+          id="hero-vid"
+          alt="Background video for the In Caravans header"
+          autoplay="true"
+          loop="true"
+          :muted="isMuted"
+          :src="require('@/assets/' + path)"
+          type="video/mp4"
+        ></video>
       </v-img>
       <v-img
-        v-if="!video"
+        v-else
         :src="require('@/assets/' + path)"
         min-height="100%"
         alt="Background image for the In Caravans header"
@@ -26,6 +32,9 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "Hero",
+  data: () => ({
+    isMuted: true
+  }),
   props: {
     title: String,
     subtitle: String,
@@ -41,7 +50,8 @@ export default Vue.extend({
       type: String,
       default: "0.4"
     }
-  }
+  },
+  mounted() {}
 });
 </script>
 
