@@ -65,12 +65,19 @@ export default Vue.extend({
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400|Roboto+Mono:300,400&display=swap");
 
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .v-application {
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  max-width: 100%;
 }
 
 h1 {
