@@ -4,7 +4,7 @@
 
     <Row>
       <Section
-        title="Send us an email"
+        title="Booking In Caravans"
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aliquam rem provident delectus, officiis ex porro deserunt ab a dolorem nam labore ea. Asperiores nobis quae deserunt tempora cupiditate facilis perspiciatis, repudiandae iusto. Aut, ratione expedita atque recusandae quam tempora sed magni natus molestiae, cumque illum libero cum deleniti aliquid.</Section>
     </Row>
   </div>

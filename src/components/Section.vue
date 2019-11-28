@@ -3,10 +3,9 @@
     <v-lazy
       v-model="isActive"
       :options="{
-          threshold: 1
+          threshold: 0.5
         }"
       transition="scroll-y-reverse-transition"
-      min-height="200"
     >
       <div>
         <h3 v-if="title !== undefined" :class="titleStyle + '--text'">{{ title }}</h3>
