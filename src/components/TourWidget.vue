@@ -1,12 +1,14 @@
 <template>
-  <a
-    href="https://www.songkick.com/artists/9873434"
-    class="songkick-widget"
-    data-theme="dark"
-    data-detect-style="true"
-    data-background-color="#363636"
-    data-locale="en"
-  >In Caravans concerts</a>
+  <div class="tour-widget">
+    <a
+      href="https://www.songkick.com/artists/9873434"
+      class="songkick-widget"
+      data-theme="dark"
+      data-detect-style="true"
+      data-background-color="#363636"
+      data-locale="en"
+    >In Caravans concerts</a>
+  </div>
 </template>
 
 <script lang="ts">
@@ -26,4 +28,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+.tour-widget {
+  margin-top: 24px;
+}
 </style>

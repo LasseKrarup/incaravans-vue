@@ -13,6 +13,7 @@ const routes = [
     {
         path: "/about",
         name: "about",
+        meta: { title: "In Caravans - About" },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
@@ -22,6 +23,7 @@ const routes = [
     {
         path: "/music",
         name: "music",
+        meta: { title: "In Caravans - The Music" },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
@@ -31,6 +33,7 @@ const routes = [
     {
         path: "/contact",
         name: "contact",
+        meta: { title: "In Caravans - Contact" },
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.

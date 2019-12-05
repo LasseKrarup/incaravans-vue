@@ -58,7 +58,12 @@ export default Vue.extend({
         href: "https://www.instagram.com/incaravans/"
       }
     ]
-  })
+  }),
+  watch: {
+    $route(to, from) {
+      document.title = to.meta.title || "In Caravans";
+    }
+  }
 });
 </script>
 
