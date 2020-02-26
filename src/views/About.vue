@@ -69,7 +69,7 @@ export default Vue.extend({
       },
       {
         name: "Søren Larsen",
-        instrument: "guitar & boats"
+        instrument: "guitar"
       },
       {
         name: "Sebastian Gall Hede Krogh",
