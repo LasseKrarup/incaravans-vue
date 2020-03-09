@@ -68,7 +68,7 @@
           the stuff they have helped us with!
         </p>
 
-        <v-row justify="center" class="px-12">
+        <v-row justify="center" class="px-sm-12">
           <v-col cols="12" sm="4" v-for="(img, idx) in images" :key="idx">
             <v-img
               :src="require('@/assets/' + img.path)"

@@ -1,14 +1,16 @@
 <template>
-  <v-col cols="12" :sm="prominent === true ? 11 : 5" class="pa-sm-12 pa-xs-8">
+  <v-col cols="12" :sm="prominent === true ? 11 : 5" class="pa-8 pa-sm-12">
     <v-lazy
       v-model="isActive"
       :options="{
-          threshold: 0.5
-        }"
+        threshold: 0.5
+      }"
       transition="scroll-y-reverse-transition"
     >
       <div :style="alignCenter === true ? 'text-align: center' : ''">
-        <h3 v-if="title !== undefined" :class="titleStyle + '--text'">{{ title }}</h3>
+        <h3 v-if="title !== undefined" :class="titleStyle + '--text'">
+          {{ title }}
+        </h3>
         <slot></slot>
       </div>
     </v-lazy>
