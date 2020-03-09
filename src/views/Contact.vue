@@ -4,7 +4,6 @@
       title="Contact"
       subtitle="Get in touch with In Caravans"
       path="incarava-train2.jpg"
-      position="0px -100px"
     ></Hero>
 
     <Row>
