@@ -3,7 +3,7 @@
     <Hero
       title="About"
       subtitle="Information about In Caravans"
-      path="IN_CARAVANS_HEADER.jpg"
+      path="IN_CARAVANS_HEADER-comp.jpg"
       overlay-opacity="0.5"
     />
     <Row>
@@ -30,7 +30,7 @@
       <Section>
         <v-img
           alt="Press photo of In Caravans"
-          src="@/assets/Vers3.jpg"
+          src="@/assets/Vers3-comp.jpg"
           width="100%"
         ></v-img>
       </Section>

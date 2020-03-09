@@ -100,13 +100,13 @@ export default Vue.extend({
   data: () => ({
     images: [
       {
-        path: "MITPICK4.jpg"
+        path: "MITPICK4-comp.jpg"
       },
       {
-        path: "Vers6.jpg"
+        path: "Vers6-comp.jpg"
       },
       {
-        path: "Vers1.jpg"
+        path: "Vers1-comp.jpg"
       }
     ]
   })

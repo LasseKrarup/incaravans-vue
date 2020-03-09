@@ -3,7 +3,7 @@
     <Hero
       title="The Music"
       subtitle="Listen to the music on your favorite streaming service"
-      path="Vers8.jpg"
+      path="Vers8-comp.jpg"
     ></Hero>
 
     <Row>
@@ -20,7 +20,6 @@
       >
         <StreamPlayer dark :embedLink="embedLink"></StreamPlayer>
       </Section>
-
     </Row>
   </div>
 </template>
