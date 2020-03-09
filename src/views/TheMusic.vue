@@ -3,15 +3,11 @@
     <Hero
       title="The Music"
       subtitle="Listen to the music on your favorite streaming service"
-      path="incarava-train2.jpg"
+      path="Vers8.jpg"
     ></Hero>
 
     <Row>
-      <Section
-        title="Mystique and power"
-      >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, odio commodi? Explicabo nobis nulla accusantium facere vel ea, nesciunt expedita maxime reprehenderit maiores, voluptates dolore minus ut placeat et assumenda sed doloribus veritatis reiciendis modi sapiente laborum recusandae atque illum? Atque consectetur inventore ipsum quasi ipsam similique fugiat adipisci esse.</Section>
-
-      <Section title="Concerts">
+      <Section prominent title="Concerts">
         When we're touring, you can find the dates for our concerts below.
         <TourWidget></TourWidget>
       </Section>
@@ -24,6 +20,7 @@
       >
         <StreamPlayer dark :embedLink="embedLink"></StreamPlayer>
       </Section>
+
     </Row>
   </div>
 </template>

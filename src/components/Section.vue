@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" :sm="prominent === true ? 11 : 5" class="mt-12 pa-xs-6">
+  <v-col cols="12" :sm="prominent === true ? 11 : 5" class="pa-sm-12 pa-xs-8">
     <v-lazy
       v-model="isActive"
       :options="{
@@ -7,7 +7,7 @@
         }"
       transition="scroll-y-reverse-transition"
     >
-      <div>
+      <div :style="alignCenter === true ? 'text-align: center' : ''">
         <h3 v-if="title !== undefined" :class="titleStyle + '--text'">{{ title }}</h3>
         <slot></slot>
       </div>
@@ -30,6 +30,10 @@ export default Vue.extend({
       default: "primary"
     },
     prominent: {
+      type: Boolean,
+      default: false
+    },
+    alignCenter: {
       type: Boolean,
       default: false
     }

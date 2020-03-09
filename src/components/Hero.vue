@@ -16,6 +16,7 @@
         v-else
         :src="require('@/assets/' + path)"
         min-height="100%"
+        :position="position"
         alt="Background image for the In Caravans header"
       ></v-img>
     </div>
@@ -49,7 +50,8 @@ export default Vue.extend({
     overlayOpacity: {
       type: String,
       default: "0.4"
-    }
+    },
+    position: String
   },
   mounted() {}
 });

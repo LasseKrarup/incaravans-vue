@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-row cols="12" justify="space-around">
+  <v-container fluid>
+    <v-row justify="space-around" class="pa-sm-12" :style="dark === true ? 'background-color: #212121' : ''">
       <slot></slot>
     </v-row>
   </v-container>
@@ -10,6 +10,12 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Row"
+  name: "Row",
+  props: {
+    dark: {
+      type: Boolean,
+      default: false
+      }
+  }
 });
 </script>

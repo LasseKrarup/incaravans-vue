@@ -7,7 +7,7 @@
       <v-icon @click.stop="drawer = !drawer" large>mdi-menu</v-icon>
     </div>
     <!-- </v-app-bar> -->
-    <v-navigation-drawer floating right v-model="drawer" app>
+    <v-navigation-drawer floating right temporary v-model="drawer" app>
       <v-img src="@/assets/courier-min.jpg"></v-img>
 
       <v-list>

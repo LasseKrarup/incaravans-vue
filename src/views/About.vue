@@ -3,29 +3,30 @@
     <Hero
       title="About"
       subtitle="Information about In Caravans"
-      path="incaravans-train1.jpg"
+      path="IN_CARAVANS_HEADER.jpg"
       overlay-opacity="0.5"
+      position="0 -150px"
     />
     <Row>
-      <Section title="The Band">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aliquid recusandae at possimus, earum adipisci rem deleniti sequi
-        <span
-          class="accent--text"
-        >voluptates</span>.
-        Ab quisquam vel repellat delectus nulla itaque quibusdam deleniti, voluptates et.
-        Accusantium exercitationem amet corrupti, repudiandae, reiciendis aperiam dolores, necessitatibus earum facilis animi recusandae.
-        Ullam atque inventore quisquam dolorum perspiciatis deserunt amet.
+      <Section title="The Music">
+        <p>The rough psych-rock elements that characterize the sound, are presented in a blanket of melodic, synthesizer-sounding bass, dreaming soundscapes and creativity. With the catchiness of pop, and aggressiveness of rock, the guitars, and the shifting vocals, draw you into a world of mystery.</p>
+
+        <p>The lyrics are ambiguous and often two-sided, leaving you to decide how your world should be like. Often wrapped up in groovyness, the music is suitable for those new to neo-psychedelia alike, with fleeting emotions, reflection and life, thematically presented.</p>
+        <v-btn class="my-12" x-large color="accent" outlined to="music">Listen to the music</v-btn>
       </Section>
-      <Section title="The Vision">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
-        eveniet facilis impedit repellat. Ut totam obcaecati veritatis
-        quaerat unde, quos deserunt, ex qui doloremque culpa harum
-        tempore facere aspernatur dolore vitae sit a atque quasi.
-        Aliquam animi, repellat ducimus dicta quisquam illum incidunt
-        temporibus blanditiis officia laborum natus, dolorum
-        ratione!
+
+      <Section>
+        <v-img alt="Press photo of In Caravans" src="@/assets/Vers3.jpg" width="100%"></v-img>
       </Section>
+    </Row>
+    <Row dark>
+      <Section title="The Band" prominent>
+        <p>In Caravans was formed in 2017 by drummer Lasse Herold Krarup and guitarist Søren Larsen, with a dream of making a modern psychedelic rock band. Bassist Sebastian was promptly given the opportunity to join this new indie-endeavor. The choice of lead singer Magnus would later come to define the expression of <span class="accent--text">In Caravans</span>. The music would be conveyed with the characteristics of his ever-shifting nature.</p>
+        <p>The first task consisted of acquiring not only a synthethizer, but someone who could play it well. Niels was the last to join, and brought with him his capabilities as a guitarist, as well as a 12 year old Micro Korg covered in duct tape and labels. The name <span class="accent--text">In Caravans</span> was originally a tribute to the shared love of going off-route, amongst the members. Their music aspired to promote ideas, thoughts and sentiments that would acknowledge the value of here-and-now moments.</p>
+        <p>With five completely different lives and interests, they all found common ground in these ideas. They would come to agree that whatever your life consisted of, what your opinions were and however high you would rank in society, there was always the opportunity of living in the moment, letting go of it all. And how better to do it, than with 4 of your best friends in a caravan, somewhere off-route.</p>
+      </Section>
+    </Row>
+    <Row>
       <Section prominent>
         <v-img
           alt="Press photo of In Caravans"
