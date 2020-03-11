@@ -8,7 +8,7 @@
     </div>
     <!-- </v-app-bar> -->
     <v-navigation-drawer floating right temporary v-model="drawer" app>
-      <v-img src="@/assets/courier-min.jpg"></v-img>
+      <v-img src="@/assets/courier-min.jpg" lazy-src="@/assets/courier-thumbnail.jpg"></v-img>
 
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" router :to="item.path">
