@@ -31,9 +31,9 @@
         <p>
           In Caravans is out on all major streaming services - and some smaller
           ones as well! We also have a music video available.
-          <small class="disabled--text">
-            (and there's a new single coming out soon!)
-          </small>
+          <small
+            class="disabled--text"
+          >(and there's a new single coming out soon!)</small>
         </p>
         <v-btn color="accent" outlined to="music">Listen to In Caravans</v-btn>
       </Section>
@@ -55,15 +55,14 @@
             href="https://www.instagram.com/madsterix/"
             target="_blank"
             class="white--text"
-            >@madsterix</a
-          >. Our good friend Rasmus Bredvig of
+          >@madsterix</a>. Our good friend Rasmus Bredvig of
           <a
             href="https://www.tapetownstudio.com/"
             target="_blank"
             class="white--text"
-            >Tapetown Studios</a
-          >
-          did our first EP, and our <i>other</i> good friend Anders Eske is
+          >Tapetown Studios</a>
+          did our first EP, and our
+          <i>other</i> good friend Anders Eske is
           doing our new stuff. Be sure to check them out as well if you enjoy
           the stuff they have helped us with!
         </p>
@@ -71,12 +70,12 @@
         <v-row justify="center" class="px-sm-12">
           <v-col cols="12" sm="4" v-for="(img, idx) in images" :key="idx">
             <v-img
-              :src="require('@/assets/' + img.path)"
+              :src="require('@/assets/' + img.name + '.jpg')"
+              :lazy-src="require('@/assets/' + img.name + '-thumbnail.jpg')"
               min-height="100%"
               :position="img.position"
               alt="Image of In Caravans"
-            >
-            </v-img>
+            ></v-img>
           </v-col>
         </v-row>
       </Section>
@@ -100,13 +99,13 @@ export default Vue.extend({
   data: () => ({
     images: [
       {
-        path: "MITPICK4-comp.jpg"
+        name: "MITPICK4-comp"
       },
       {
-        path: "Vers6-comp.jpg"
+        name: "Vers6-comp"
       },
       {
-        path: "Vers1-comp.jpg"
+        name: "Vers1-comp"
       }
     ]
   })
