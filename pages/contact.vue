@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Hero title="Contact" subtitle="Get in touch with In Caravans" path="incaravans-train2.jpg"></Hero>
+    <Hero
+      title="Contact"
+      subtitle="Get in touch with In Caravans"
+      path="incaravans-train2.jpg"
+    ></Hero>
 
     <Row>
       <Section prominent align-center title="Booking In Caravans">
@@ -63,7 +67,10 @@ export default Vue.extend({
         text: "+45 4162 1410"
       }
     ]
-  })
+  }),
+  head: {
+    title: "Contact"
+  }
 });
 </script>
 

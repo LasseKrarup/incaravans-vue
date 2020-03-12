@@ -16,16 +16,48 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: "%s - " + process.env.npm_package_name,
-    title: process.env.npm_package_name || "",
+    titleTemplate: "%s - In Caravans",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
+        hid: "title",
+        name: "title",
+        content: "In Caravans - Psychedelic Indie Rock"
+      },
+      {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
-      }
+        content:
+          "Love, addiction, loneliness, stress and friendship - those are the themes of In Caravans' music. Though at times mysterious and hard to decipher, the lyrics often describe the hardest emotions like jealousy and insecurity with a unique clarity."
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content: "music, psychedelic indie rock, band, In Caravans"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "In Caravans - Psychedelic Indie Rock"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "http://www.incaravans.com"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Love, addiction, loneliness, stress and friendship - those are the themes of In Caravans' music. Though at times mysterious and hard to decipher, the lyrics often describe the hardest emotions like jealousy and insecurity with a unique clarity."
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "http://www.incaravans.com/ogimage.jpg"
+      },
+      { hid: "og:type", property: "og:type", content: "website" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },

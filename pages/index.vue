@@ -31,11 +31,13 @@
         <p>
           In Caravans is out on all major streaming services - and some smaller
           ones as well! We also have a music video available.
-          <small
-            class="disabled--text"
-          >(and there's a new single coming out soon!)</small>
+          <small class="disabled--text"
+            >(and there's a new single coming out soon!)</small
+          >
         </p>
-        <v-btn color="accent" outlined nuxt to="music">Listen to In Caravans</v-btn>
+        <v-btn color="accent" outlined nuxt to="music"
+          >Listen to In Caravans</v-btn
+        >
       </Section>
       <Section title="Get to know us">
         <p>
@@ -55,12 +57,14 @@
             href="https://www.instagram.com/madsterix/"
             target="_blank"
             class="white--text"
-          >@madsterix</a>. Our good friend Rasmus Bredvig of
+            >@madsterix</a
+          >. Our good friend Rasmus Bredvig of
           <a
             href="https://www.tapetownstudio.com/"
             target="_blank"
             class="white--text"
-          >Tapetown Studios</a>
+            >Tapetown Studios</a
+          >
           did our first EP, and our
           <i>other</i> good friend Anders Eske is doing our new stuff. Be sure
           to check them out as well if you enjoy the stuff they have helped us
@@ -89,12 +93,16 @@ import Hero from "@/components/Hero.vue";
 import Section from "@/components/Section.vue";
 import Row from "@/components/Row.vue";
 
-export default Vue.extend({
+export default {
   name: "home",
   components: {
     Hero,
     Section,
     Row
+  },
+  head: {
+    title: "In Caravans",
+    titleTemplate: "%s"
   },
   data: () => ({
     images: [
@@ -109,5 +117,5 @@ export default Vue.extend({
       }
     ]
   })
-});
+};
 </script>

@@ -57,6 +57,9 @@ export default Vue.extend({
         src: "https://album.link/WkRwWTQHwG5rB"
       }
     ]
-  })
+  }),
+  head: {
+    title: "The Music"
+  }
 });
 </script>

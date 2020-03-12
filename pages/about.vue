@@ -22,7 +22,9 @@
           music is suitable for those new to neo-psychedelia alike, with
           fleeting emotions, reflection and life, thematically presented.
         </p>
-        <v-btn class="my-12" x-large color="accent" outlined nuxt to="music">Listen to the music</v-btn>
+        <v-btn class="my-12" x-large color="accent" outlined nuxt to="music"
+          >Listen to the music</v-btn
+        >
       </Section>
 
       <Section>
@@ -42,9 +44,7 @@
           rock band. Bassist Sebastian was promptly given the opportunity to
           join this new indie-endeavor. The choice of lead singer Magnus would
           later come to define the expression of
-          <span
-            class="accent--text"
-          >In Caravans</span>. The music would be
+          <span class="accent--text">In Caravans</span>. The music would be
           conveyed with the characteristics of his ever-shifting nature.
         </p>
         <p>
@@ -52,9 +52,7 @@
           someone who could play it well. Niels was the last to join, and
           brought with him his capabilities as a guitarist, as well as a 12 year
           old Micro Korg covered in duct tape and labels. The name
-          <span
-            class="accent--text"
-          >In Caravans</span> was originally a tribute
+          <span class="accent--text">In Caravans</span> was originally a tribute
           to the shared love of going off-route, amongst the members. Their
           music aspired to promote ideas, thoughts and sentiments that would
           acknowledge the value of here-and-now moments.
@@ -79,7 +77,13 @@
         ></v-img>
         <p class="member-paragraph">
           <span class="l2r">Left to right:</span>
-          <span v-for="(member, idx) in members" :key="idx" cols="12" sm="4" dense>
+          <span
+            v-for="(member, idx) in members"
+            :key="idx"
+            cols="12"
+            sm="4"
+            dense
+          >
             <span class="accent--text">{{ member.name }}</span>
             <span class="disabled--text">({{ member.instrument }})</span>
           </span>
@@ -125,7 +129,10 @@ export default Vue.extend({
         instrument: "guitar & synths"
       }
     ]
-  })
+  }),
+  head: {
+    title: "About"
+  }
 });
 </script>
 
