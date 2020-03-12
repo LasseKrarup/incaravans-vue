@@ -5,7 +5,7 @@ const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
         router: {
-          base: "/incaravans_vue/"
+          base: "/incaravans-vue/"
         }
       }
     : {};
