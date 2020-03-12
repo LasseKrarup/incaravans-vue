@@ -35,14 +35,14 @@
             class="disabled--text"
           >(and there's a new single coming out soon!)</small>
         </p>
-        <v-btn color="accent" outlined to="music">Listen to In Caravans</v-btn>
+        <v-btn color="accent" outlined nuxt to="music">Listen to In Caravans</v-btn>
       </Section>
       <Section title="Get to know us">
         <p>
           You can read the story behind the band, how we met and what inspires
           us. You can also reach us through email or social media.
         </p>
-        <v-btn color="accent" outlined to="about">Read more</v-btn>
+        <v-btn color="accent" outlined nuxt to="about">Read more</v-btn>
       </Section>
     </Row>
 

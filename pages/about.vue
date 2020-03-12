@@ -22,7 +22,7 @@
           music is suitable for those new to neo-psychedelia alike, with
           fleeting emotions, reflection and life, thematically presented.
         </p>
-        <v-btn class="my-12" x-large color="accent" outlined to="music">Listen to the music</v-btn>
+        <v-btn class="my-12" x-large color="accent" outlined nuxt to="music">Listen to the music</v-btn>
       </Section>
 
       <Section>
