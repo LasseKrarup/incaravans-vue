@@ -7,6 +7,15 @@
     ></Hero>
 
     <Row>
+      <Section prominent title="New single 'Sideways' out now!" id="sideways">
+        <p>
+          Our new single 'Sideways' was released 8th of May 2020. Despite the ominous lyrics, this one is a danceable track that'll get you grooving!
+        </p>
+        <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/pn2mq0cpwzk7c' }" />
+      </Section>
+    </Row>
+
+    <Row>
       <Section prominent title="Concerts">
         When we're touring, you can find the dates for our concerts below.
         <TourWidget></TourWidget>

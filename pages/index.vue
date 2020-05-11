@@ -7,6 +7,18 @@
       path="InC_HeroMovie.mp4"
     />
 
+    <Row dark style="margin-top: -12px">
+      <Section align-center prominent title="New single 'Sideways' is out!">
+        <p>
+          Our new single 'Sideways' is out! We're so stoked about this track as it marks a new turn for us. 
+          <br>
+          Ominous lyrics combine with a danceable groove to form this track.
+        </p>
+        <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/pn2mq0cpwzk7c' }" />
+      </Section>
+      
+    </Row>
+
     <Row>
       <Section title="A road trip with broken brakes">
         <p>
@@ -92,13 +104,15 @@ import Vue from "vue";
 import Hero from "@/components/Hero.vue";
 import Section from "@/components/Section.vue";
 import Row from "@/components/Row.vue";
+import StreamPlayer from "@/components/StreamPlayer.vue";
 
 export default {
   name: "home",
   components: {
     Hero,
     Section,
-    Row
+    Row,
+    StreamPlayer
   },
   head: {
     title: "In Caravans",
