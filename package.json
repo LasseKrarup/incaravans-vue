@@ -17,8 +17,6 @@
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
-    "@nuxtjs/vuetify": "^1.0.0",
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0"
+    "@nuxtjs/vuetify": "^1.0.0"
   }
 }
