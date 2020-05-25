@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-row justify="space-around" class="pa-sm-12" :style="dark === true ? 'background-color: #212121' : ''">
+    <v-row justify="space-around" :align="align" :align-content="alignContent" class="pa-sm-12" :style="dark === true ? 'background-color: #212121' : ''">
       <slot></slot>
     </v-row>
   </v-container>
@@ -15,7 +15,15 @@ export default Vue.extend({
     dark: {
       type: Boolean,
       default: false
-      }
+      },
+    alignContent: {
+      type: String,
+      default: undefined
+    },
+    align: {
+      type: String,
+      default: undefined
+    }
   }
 });
 </script>

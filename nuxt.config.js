@@ -29,12 +29,12 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Love, addiction, loneliness, stress and friendship - those are the themes of In Caravans' music. Though at times mysterious and hard to decipher, the lyrics often describe the hardest emotions like jealousy and insecurity with a unique clarity."
+          "In Caravans is an indie/alternative rock band. Love, addiction, loneliness, stress and friendship - those are the themes of In Caravans' music. We are IN CARAVANS."
       },
       {
         hid: "keywords",
         name: "keywords",
-        content: "music, psychedelic indie rock, band, In Caravans"
+        content: "music, psychedelic indie rock, band, In Caravans, alternative"
       },
       {
         hid: "og:title",

@@ -7,8 +7,8 @@
       path="InC_HeroMovie.mp4"
     />
 
-    <Row dark style="margin-top: -12px">
-      <Section align-center prominent title="New single 'Sideways' is out!">
+    <Row style="margin-top: -12px">
+      <Section title="New single 'Sideways' is out!">
         <p>
           Our new single 'Sideways' is out! We're so stoked about this track as it marks a new turn for us. 
           <br>
@@ -16,10 +16,15 @@
         </p>
         <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/pn2mq0cpwzk7c' }" />
       </Section>
+
+      <Section title="'Real Emotion' drops 5/6">
+        <p>We are releasing yet another single on the 5th of June 2020. In this video Magnus rambles (in Danish) about the thoughts and feelings he had when writing the song.</p>
+        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/KnVcDEgBY1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </Section>
       
     </Row>
 
-    <Row>
+    <Row dark>
       <Section title="A road trip with broken brakes">
         <p>
           A concert with In Caravans is like a 200 MPH road trip through the
@@ -38,22 +43,43 @@
       </Section>
     </Row>
 
-    <Row dark>
-      <Section title="Explore the music">
-        <p>
+    <Row>
+      <Section prominent alignCenter title="Explore the music">
+        <div style="text-align: justify">
+        <p style="padding-top: 2rem">
           In Caravans is out on all major streaming services - and some smaller
           ones as well! We also have a music video available.
           <small class="disabled--text"
             >(and there's a new single coming out soon!)</small
           >
         </p>
+        <p>The music of <strong class="accent--text">In Caravans</strong> is driven by lead singer Magnus Barslund's ability to express those <i>tough to describe</i> thoughts and emotions that we can all relate to. He does this using straight up pop melodies, fooling you to forget that you were just lost in deep thought. Funky bass lines and captivating guitar hooks compel you to move your feet while the vocals keep you focused on the struggles of navigating this dystopic world.</p>
+        </div>
         <v-btn color="accent" outlined nuxt to="music"
           >Listen to In Caravans</v-btn
         >
       </Section>
+    </Row>
+
+    <Row dark align="center">
+      <Section>
+        <v-img :src="require('~/assets/MITPICK4-comp.jpg')" alt="In Caravans on the roof"></v-img>
+      </Section>
+
       <Section title="Get to know us">
         <p>
-          You can read the story behind the band, how we met and what inspires
+          <strong class="accent--text">In Caravans</strong> consists of 5 people:
+          <ul style="list-item-style: none">
+            <li v-for="(member, i) in members" :key="i">
+              {{ member.name }} <span class="disabled--text">({{ member.instrument }})</span>
+            </li>    
+          </ul>      
+        </p>
+        <p>
+          We started out in an office building in western Aarhus. Since then we have moved to a rehearsal room, where the outside light bulbs don't get stolen, and we don't have to carry Søren's guitar amp <span class="disabled--text">(which is the heaviest object known to man)</span> up 3 flights of stairs.
+        </p>
+        <p>
+          You can read the story behind In Caravans, how we met and what inspires
           us. You can also reach us through email or social media.
         </p>
         <v-btn color="accent" outlined nuxt to="about">Read more</v-btn>
@@ -128,6 +154,28 @@ export default {
       },
       {
         name: "Vers1-comp"
+      }
+    ],
+    members: [
+      {
+        name: "Magnus Barslund",
+        instrument: "vocals"
+      },
+      {
+        name: "Lasse Herold Krarup",
+        instrument: "drums"
+      },
+      {
+        name: "Søren Larsen",
+        instrument: "guitar"
+      },
+      {
+        name: "Sebastian Gall Hede Krogh",
+        instrument: "bass"
+      },
+      {
+        name: "Niels Langeland",
+        instrument: "guitar & synths"
       }
     ]
   })

@@ -88,6 +88,10 @@ export default Vue.extend({
                 title: "Real Emotion Press Release",
                 path: "/press/Real_Emotion_Press.pdf"
             },
+            {
+                title: "Real Emotion Press Release (Danish)",
+                path: "/press/Real_Emotion_Press_danish.pdf"
+            },
         ],
         images: [
             {
