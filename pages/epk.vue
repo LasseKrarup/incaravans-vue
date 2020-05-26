@@ -7,6 +7,33 @@
         ></Hero>
 
     <Row>
+        <Section prominent title="Latest Press">
+            <p>
+                Listen to our upcoming single 'Real Emotion' below.
+            </p>
+            <audio controls>
+                <source :src="require('@/assets/epk/Real Emotion (Mastertester).mp3')" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio> 
+            <ul class="epk-list">
+                <li>
+                    <a :href="press[0].path" target="_blank">
+                        <img :src="require('@/assets/epk/thumbnails/pdf-thumbnail.png')" /> {{ press[0].title }}
+                    </a>
+                </li>
+                <li>
+                    <a :href="lyrics[0].path" target="_blank">
+                        <img :src="require('@/assets/epk/thumbnails/pdf-thumbnail.png')" /> {{ lyrics[0].title }}
+                    </a>
+                </li>
+                <li>
+                    <a :href="require('@/assets/' + artwork[0].path)" target="_blank">
+                        <img :src="require('@/assets/' + artwork[0].thumbnail)" /> {{ artwork[0].title }}
+                    </a>
+                </li>
+            </ul>
+        </Section>
+
         <Section title="Press">
             <p><a href="/incaravans-press.zip" target="_blank">Click here</a> to download all files as a .zip archive</p>
             
@@ -73,6 +100,14 @@ export default Vue.extend({
     data: () => ({
         press: [
             {
+                title: "Real Emotion Press Release (Danish)",
+                path: "/press/Real_Emotion_Press_danish.pdf"
+            },
+            {
+                title: "Real Emotion Press Release",
+                path: "/press/Real_Emotion_Press.pdf"
+            },
+            {
                 title: "Bio",
                 path: "/press/In_Caravans_Bio.pdf"
             },
@@ -83,14 +118,6 @@ export default Vue.extend({
             {
                 title: "Sideways Press Release",
                 path: "/press/Sideways_press.pdf"
-            },
-            {
-                title: "Real Emotion Press Release",
-                path: "/press/Real_Emotion_Press.pdf"
-            },
-            {
-                title: "Real Emotion Press Release (Danish)",
-                path: "/press/Real_Emotion_Press_danish.pdf"
             },
         ],
         images: [
@@ -157,14 +184,14 @@ export default Vue.extend({
         ],
         artwork: [
             {
-                title: "Sideways cover",
-                path: "epk/artwork/sideways.1400x1400.jpg",
-                thumbnail: "epk/thumbnails/sideways.1400x1400-thumbnail.png"
-            },
-            {
                 title: "Real Emotion cover",
                 path: "epk/artwork/realemotion.incaravans.jpg",
                 thumbnail: "epk/thumbnails/realemotion.incaravans-thumbnail.png"
+            },
+            {
+                title: "Sideways cover",
+                path: "epk/artwork/sideways.1400x1400.jpg",
+                thumbnail: "epk/thumbnails/sideways.1400x1400-thumbnail.png"
             },
             {
                 title: "Courier cover",
@@ -219,7 +246,7 @@ ul.epk-list {
             background-color: #444;
         }
 
-        a {
+        > * {
             text-decoration: none;
             color: white;
             display: flex;

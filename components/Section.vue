@@ -2,9 +2,6 @@
   <v-col cols="12" :sm="prominent === true ? 11 : 5" class="pa-8 pa-sm-12">
     <v-lazy
       v-model="isActive"
-      :options="{
-        threshold: 0.5
-      }"
       transition="scroll-y-reverse-transition"
     >
       <div :style="alignCenter === true ? 'text-align: center' : ''">
