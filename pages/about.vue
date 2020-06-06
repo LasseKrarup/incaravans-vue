@@ -131,7 +131,10 @@ export default Vue.extend({
     ]
   }),
   head: {
-    title: "About"
+    title: "About",
+    link: [
+      {rel: "canonical", href: "https://incaravans.com/about/"}
+    ]
   }
 });
 </script>

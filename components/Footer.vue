@@ -22,7 +22,7 @@
             In Caravans
           </span>
           <br />
-          <span class="text--disabled">Design by Lasse Krarup</span>
+          <span class="text--disabled">Design by <a id="admin-link" href="https://www.lassekrarup.com" target="_blank">Lasse Krarup</a></span>
         </v-col>
       </v-row>
     </v-container>
@@ -39,3 +39,10 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style lang="sass" scoped>
+#admin-link
+  color: white
+  font-weight: 500
+  text-decoration: none
+</style>

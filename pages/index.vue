@@ -143,7 +143,10 @@ export default {
   },
   head: {
     title: "In Caravans \xb7 Psychedelic indie rock music",
-    titleTemplate: "%s"
+    titleTemplate: "%s",
+    link: [
+      {rel: "canonical", href: "https://incaravans.com/"}
+    ]
   },
   data: () => ({
     images: [
