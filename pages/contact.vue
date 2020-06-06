@@ -71,7 +71,7 @@ export default Vue.extend({
   head: {
     title: "Contact",
     link: [
-      {rel: "canonical", href: "https://incaravans.com/contact/"}
+      {rel: "canonical", href: "https://www.incaravans.com/contact/"}
     ]
   }
 });

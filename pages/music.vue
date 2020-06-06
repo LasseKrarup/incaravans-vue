@@ -75,7 +75,7 @@ export default Vue.extend({
   head: {
     title: "The Music",
     link: [
-      {rel: "canonical", href: "https://incaravans.com/music/"}
+      {rel: "canonical", href: "https://www.incaravans.com/music/"}
     ]
   }
 });
