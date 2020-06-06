@@ -7,11 +7,11 @@
     ></Hero>
 
     <Row>
-      <Section prominent title="New single 'Sideways' out now!" id="sideways">
+      <Section prominent title="New single 'Real Emotion' out now!" id="realemotion">
         <p>
-          Our new single 'Sideways' was released 8th of May 2020. Despite the ominous lyrics, this one is a danceable track that'll get you grooving!
+          Our newest single 'Real Emotion' has just landed on the 5th of June! This track features honest lyrics, a groovy verse and an <strong>explosive</strong> chorus. <br>Check it out and please throw us a like on <a href="www.facebook.com/InCaravans" target="_blank">facebook</a>.
         </p>
-        <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/pn2mq0cpwzk7c' }" />
+        <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/tfqkcgtz6knfx' }" />
       </Section>
     </Row>
 
@@ -56,6 +56,11 @@ export default Vue.extend({
         title: "Watch 'Maybe'",
         src: "https://song.link/9bbsBj8J0dq30",
         prominent: true
+      },
+      {
+        title: "'Sideways' May 2020",
+        src: "https://song.link/pn2mq0cpwzk7c",
+        prominent: false
       },
       {
         title: "'Courier' Single",
