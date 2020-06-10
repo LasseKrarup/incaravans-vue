@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /epk/
+Sitemap: https://www.incaravans.com/sitemap.xml
