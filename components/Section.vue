@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" :sm="prominent === true ? 11 : 5" class="pa-8 pa-sm-12 intersect-wrapper" ref="wrapper" :style="isIntersected ? 'opacity: 1' : ''">
+  <v-col cols="12" :sm="prominent === true ? 11 : 5" :class="'pa-8 pa-sm-12 intersection-wrapper' + (isIntersected ? ' is-active' : '')" ref="wrapper">
       <div :style="alignCenter === true ? 'text-align: center' : ''">
         <h3 v-if="title !== undefined" :class="titleStyle + '--text'">
           {{ title }}
@@ -43,6 +43,8 @@ export default Vue.extend({
       if (entries[0].intersectionRatio > 0) {
         // @ts-ignore
         this.isIntersected = true
+      } else {
+        this.isIntersected = false
       }
     }, options)
 
@@ -53,10 +55,21 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.intersect-wrapper {
-  transition: opacity ease-in 0.5s;
-  transition-delay: 0.2s;
-  opacity: 0;
+@keyframes fadeup {
+  0% { opacity: 0; transform: translateY(20%) }
+  100% {opacity: 1; transform: none}
+}
+
+.intersection-wrapper {
+  animation-name: fadeup;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-play-state: paused;
+}
+
+.is-active {
+  animation-play-state: running;
 }
 
 h3 {
