@@ -8,10 +8,12 @@
     </div>
     <!-- </v-app-bar> -->
     <v-navigation-drawer floating right temporary v-model="drawer" app>
-      <v-img
-        :src="require('~/assets/courier-min.jpg')"
-        :lazy-src="require('~/assets/courier-thumbnail.jpg')"
-      ></v-img>
+      <v-lazy>
+        <v-img
+          :src="require('~/assets/courier-min.jpg')"
+          :lazy-src="require('~/assets/courier-thumbnail.jpg')"
+        ></v-img>
+      </v-lazy>
 
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" nuxt :to="item.path">

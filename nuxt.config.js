@@ -44,7 +44,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "http://www.incaravans.com"
+        content: "https://www.incaravans.com/"
       },
       {
         hid: "og:description",
@@ -55,11 +55,11 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "http://www.incaravans.com/ogimage.jpg"
+        content: "https://www.incaravans.com/ogimage.jpg"
       },
       { hid: "og:type", property: "og:type", content: "website" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }, {rel: "stylesheet", href: "https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"}]
   },
   /*
    ** Customize the progress-bar color
@@ -102,7 +102,8 @@ export default {
           success: colors.green.accent3
         }
       }
-    }
+    },
+    defaultAssets: false
   },
   /*
    ** Build configuration

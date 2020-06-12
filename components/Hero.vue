@@ -1,24 +1,26 @@
 <template>
   <div class="hero-container">
     <div class="video-container">
-      <v-img v-if="video" min-height="100%" min-width="100%">
-        <video
-          id="hero-vid"
-          alt="Background video for the In Caravans header"
-          autoplay="true"
-          loop="true"
-          :muted="isMuted"
+      <v-lazy>
+        <v-img v-if="video" min-height="100%" min-width="100%">
+          <video
+            id="hero-vid"
+            alt="Background video for the In Caravans header"
+            autoplay="true"
+            loop="true"
+            :muted="isMuted"
+            :src="require('@/assets/' + path)"
+            type="video/mp4"
+          ></video>
+        </v-img>
+        <v-img
+          v-else
           :src="require('@/assets/' + path)"
-          type="video/mp4"
-        ></video>
-      </v-img>
-      <v-img
-        v-else
-        :src="require('@/assets/' + path)"
-        min-height="100%"
-        :position="position"
-        alt="Background image for the In Caravans header"
-      ></v-img>
+          min-height="100%"
+          :position="position"
+          alt="Background image for the In Caravans header"
+        ></v-img>
+      </v-lazy>
     </div>
     <div class="overlay" :style="{backgroundColor: 'rgba(0,0,0,' + overlayOpacity + ')'}"></div>
     <div class="hero-content">

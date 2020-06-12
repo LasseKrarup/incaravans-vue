@@ -64,18 +64,20 @@
 
     <Row dark align="center">
       <Section>
-        <v-img :src="require('~/assets/MITPICK4-comp.jpg')" alt="In Caravans on the roof"></v-img>
+        <v-lazy>
+          <v-img :src="require('~/assets/MITPICK4-comp.jpg')" alt="In Caravans on the roof"></v-img>
+        </v-lazy>
       </Section>
 
       <Section title="Get to know us">
         <p>
           <strong class="accent--text">In Caravans</strong> consists of 5 people:
+        </p>
           <ul style="list-item-style: none">
             <li v-for="(member, i) in members" :key="i">
               {{ member.name }} <span class="disabled--text">({{ member.instrument }})</span>
             </li>    
           </ul>      
-        </p>
         <p>
           We started out in an office building in western Aarhus. Since then we have moved to a rehearsal room, where the outside light bulbs don't get stolen, and we don't have to carry Søren's guitar amp <span class="disabled--text">(which is the heaviest object known to man)</span> up 3 flights of stairs.
         </p>
@@ -112,13 +114,15 @@
 
         <v-row justify="center" class="px-sm-12">
           <v-col cols="12" sm="4" v-for="(img, idx) in images" :key="idx">
-            <v-img
-              :src="require('@/assets/' + img.name + '.jpg')"
-              :lazy-src="require('@/assets/' + img.name + '-thumbnail.jpg')"
-              min-height="100%"
-              :position="img.position"
-              alt="Image of In Caravans"
-            ></v-img>
+            <v-lazy>
+              <v-img
+                :src="require('@/assets/' + img.name + '.jpg')"
+                :lazy-src="require('@/assets/' + img.name + '-thumbnail.jpg')"
+                min-height="100%"
+                :position="img.position"
+                alt="Image of In Caravans"
+              ></v-img>
+            </v-lazy>
           </v-col>
         </v-row>
       </Section>
