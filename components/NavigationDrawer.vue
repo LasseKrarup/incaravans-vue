@@ -5,10 +5,15 @@
     </div>
     <v-navigation-drawer floating right temporary v-model="drawer" app>
       <v-lazy>
-        <v-img
+        <!-- <v-img
           :src="require('~/assets/courier-min.jpg')"
           :lazy-src="require('~/assets/courier-thumbnail.jpg')"
-        ></v-img>
+        ></v-img> -->
+        <picture>
+          <source srcset="@/assets/courier-min.webp" type="image/webp">
+          <source srcset="@/assets/courier-min.jpg" type="image/jpeg">
+          <img src="@/assets/courier-min.jpg" alt="Courier cover" />
+        </picture>
       </v-lazy>
 
       <v-list>
@@ -44,6 +49,10 @@ export default Vue.extend({
   color: #d9d9d9;
   line-height: 1.5rem;
   letter-spacing: 2pt;
+}
+
+picture > * {
+  max-width: 100%;
 }
 
 .menu-button {
