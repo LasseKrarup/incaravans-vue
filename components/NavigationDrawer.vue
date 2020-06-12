@@ -1,12 +1,8 @@
 <template>
   <nav>
-    <!-- <v-app-bar app inverted-scroll>
-      <v-toolbar-title>in caravans</v-toolbar-title>
-    <v-spacer></v-spacer>-->
-    <div class="menu-button">
-      <v-icon large @click.stop="drawer = !drawer">mdi-menu</v-icon>
+    <div class="menu-button" @click.stop="drawer = !drawer">
+      <span class="iconify" data-icon="mdi:menu"></span>
     </div>
-    <!-- </v-app-bar> -->
     <v-navigation-drawer floating right temporary v-model="drawer" app>
       <v-lazy>
         <v-img
@@ -18,7 +14,7 @@
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index" nuxt :to="item.path">
           <v-list-item-icon>
-            <v-icon>mdi-{{ item.icon }}</v-icon>
+            <span class="iconify" :data-icon="'mdi:' + item.icon" style="font-size: 24px"></span>
           </v-list-item-icon>
           <v-list-item-content>{{ item.name }}</v-list-item-content>
         </v-list-item>
@@ -56,6 +52,21 @@ export default Vue.extend({
   right: 0;
   padding: 12px;
   z-index: 3;
+
+  .iconify {
+    font-size: 64px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: #aaa;
+    border-radius: 50%;
+    padding: 8px;
+    // z-index: 10;
+
+    &:hover {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
 
   .v-icon::before,
   .v-icon:hover::before {

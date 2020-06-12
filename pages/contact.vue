@@ -21,13 +21,13 @@
             :href="icon.link"
             target="_blank"
           >
-            <v-icon size="80">mdi-{{ icon.icon }}</v-icon>
+            <span class="iconify" :data-icon="'mdi:'+ icon.icon" style="font-size: 80px"></span>
             <br />
             {{ icon.text }}
           </a>
 
           <p v-else class="disabled--text text-center">
-            <v-icon size="80">mdi-{{ icon.icon }}</v-icon>
+            <span class="iconify" :data-icon="'mdi:'+ icon.icon" style="font-size: 80px"></span>
             <br />
             {{ icon.text }}
           </p>

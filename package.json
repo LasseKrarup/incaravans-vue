@@ -16,6 +16,7 @@
     "nuxt": "^2.12.2"
   },
   "devDependencies": {
+    "@mdi/font": "^5.3.45",
     "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/vuetify": "^1.0.0"
   }

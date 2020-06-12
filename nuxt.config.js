@@ -59,7 +59,13 @@ export default {
       },
       { hid: "og:type", property: "og:type", content: "website" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }, {rel: "stylesheet", href: "https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"}]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }, 
+      // {rel: "stylesheet", href: "https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"}
+    ],
+    script: [
+      {src: "//code.iconify.design/1/1.0.6/iconify.min.js", body: true}
+    ]
   },
   /*
    ** Customize the progress-bar color

@@ -11,7 +11,7 @@
             :href="icon.href"
             :target="icon.icon != 'home' ? '_blank' : undefined"
           >
-            <v-icon size="24px">mdi-{{ icon.icon }}</v-icon>
+            <span class="iconify" :data-icon="'mdi:'+ icon.icon" style="font-size:24px"></span>
           </v-btn>
         </v-col>
       </v-row>
