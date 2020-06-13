@@ -16,6 +16,7 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {lang: "en"},
     titleTemplate: "%s - In Caravans",
     meta: [
       { charset: "utf-8" },
@@ -29,7 +30,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "In Caravans is an indie/alternative rock band. Love, addiction, loneliness, stress and friendship - those are the themes of In Caravans' music. We are IN CARAVANS."
+          "In Caravans is an indie/alternative rock band. Love, addiction, loneliness, stress and friendship - those are the themes of In Caravans' music."
       },
       {
         hid: "keywords",

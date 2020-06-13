@@ -71,7 +71,7 @@
 
       <Section title="Get to know us">
         <p>
-          <strong class="accent--text">In Caravans</strong> consists of 5 people:
+          <span class="accent--text">In Caravans</span> consists of 5 people:
         </p>
           <ul style="list-item-style: none">
             <li v-for="(member, i) in members" :key="i">
