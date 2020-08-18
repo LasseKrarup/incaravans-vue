@@ -35,42 +35,47 @@ export default Vue.extend({
   data: () => ({
     isIntersected: false
   }),
-  mounted () {
-    const options = {
-      threshold: 0
-    }
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].intersectionRatio > 0) {
-        // @ts-ignore
-        this.isIntersected = true
-      } else {
-        this.isIntersected = false
-      }
-    }, options)
+  // ========== ANIMATION ON INTERSECTION REMOVED BECAUSE OF SEO ==========
+  // mounted () {
+  //   const options = {
+  //     threshold: 0
+  //   }
+  //   const observer = new IntersectionObserver((entries) => {
+  //     if (entries[0].intersectionRatio > 0) {
+  //       // @ts-ignore
+  //       this.isIntersected = true
+  //     } else {
+  //       this.isIntersected = false
+  //     }
+  //   }, options)
 
-    // @ts-ignore
-    observer.observe(this.$refs.wrapper)
-  }
+  //   // @ts-ignore
+  //   observer.observe(this.$refs.wrapper)
+  // }
+  // ======================================================================
 });
 </script>
 
 <style lang="scss" scoped>
-@keyframes fadeup {
-  0% { opacity: 0; transform: translateY(20%) }
-  100% {opacity: 1; transform: none}
-}
+// ========== ANIMATION ON INTERSECTION REMOVED BECAUSE OF SEO ==========
+// @keyframes fadeup {
+//   0% { transform: translateY(25%) }
+//   100% { transform: none }
+// }
 
-.intersection-wrapper {
-  animation-name: fadeup;
-  animation-fill-mode: both;
-  animation-duration: 1s;
-  animation-delay: 0.3s;
-  animation-play-state: paused;
-}
+// .intersection-wrapper {
+//   animation-name: fadeup;
+//   animation-fill-mode: both;
+//   animation-duration: 1s;
+//   animation-delay: 0.3s;
+//   animation-play-state: paused;
+//   animation-timing-function: cubic-bezier(.02,.98,.59,.99);
+// }
 
-.is-active {
-  animation-play-state: running;
-}
+// .is-active {
+//   animation-play-state: running;
+// }
+// ======================================================================
 
 h3 {
   font-weight: 500;

@@ -6,7 +6,7 @@
       path="IN_CARAVANS_HEADER-comp.jpg"
       overlay-opacity="0.5"
     />
-    <Row>
+    <Row align="center">
       <Section title="The Music">
         <p>
           The rough psych-rock elements that characterize the sound, are
