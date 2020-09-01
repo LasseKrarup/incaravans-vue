@@ -76,6 +76,19 @@ export default Vue.extend({
     title: "The Music",
     link: [
       {rel: "canonical", href: "https://www.incaravans.com/music/"}
+    ],
+    meta: [
+      {
+        hid: "title",
+        name: "title",
+        content: "Energy fueled psychedelic indie rock - In Caravans"
+      },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Listen to In Caravans' music on your favorite streaming service. Get news about the concerts and check out the tunes here."
+      }
     ]
   }
 });

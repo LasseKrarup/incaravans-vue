@@ -134,6 +134,19 @@ export default Vue.extend({
     title: "About",
     link: [
       {rel: "canonical", href: "https://www.incaravans.com/about/"}
+    ],
+    meta: [
+      {
+        hid: "title",
+        name: "title",
+        content: "About In Caravans - The story behind the band and the music"
+      },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "In Caravans was formed in 2017 by drummer Lasse Herold Krarup and guitarist Søren Larsen, with a dream of making a modern psychedelic rock band. Bassist Sebastian was promptly given the opportunity to join this new indie-endeavor. The choice of lead singer Magnus would later come to define the expression of In Caravans. The music would be conveyed with the characteristics of his ever-shifting nature."
+      }
     ]
   }
 });

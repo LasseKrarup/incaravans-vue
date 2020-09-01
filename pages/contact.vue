@@ -72,6 +72,19 @@ export default Vue.extend({
     title: "Contact",
     link: [
       {rel: "canonical", href: "https://www.incaravans.com/contact/"}
+    ],
+    meta: [
+      {
+        hid: "title",
+        name: "title",
+        content: "Contact In Caravans"
+      },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Get in touch with us! Inquiries for booking, merch or comments about our music can be made here."
+      }
     ]
   }
 });
