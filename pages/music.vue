@@ -9,7 +9,7 @@
     <Row>
       <Section prominent title="New single 'Real Emotion' out now!" id="realemotion">
         <p>
-          Our newest single 'Real Emotion' has just landed on the 5th of June! This track features honest lyrics, a groovy verse and an <strong>explosive</strong> chorus. <br>Check it out and please throw us a like on <a href="https://www.facebook.com/InCaravans" target="_blank">facebook</a>.
+          Our newest single 'Real Emotion' has just landed on the 5th of June! This track features honest lyrics, a groovy verse and an <strong>explosive</strong> chorus. <br>Check it out and please throw us a like on <a href="https://www.facebook.com/InCaravans" target="_blank">facebook</a>. The track is released with funding from Koda Kultur.
         </p>
         <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/tfqkcgtz6knfx' }" />
       </Section>

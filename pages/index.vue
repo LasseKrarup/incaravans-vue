@@ -9,7 +9,7 @@
 
     <Row style="margin-top: -12px">
       <Section title="New single'Real Emotion'">
-        <p>We've just released yet another single on the 5th of June 2020. <a href="/music#realemotion">'Real Emotions'</a> is about being under pressure from everyone around you, constantly being told what to think, feel and how to act. Rumination and regret are things that unite us all.</p>
+        <p>We've just released yet another single on the 5th of June 2020. <a href="/music#realemotion">'Real Emotions'</a> is about being under pressure from everyone around you, constantly being told what to think, feel and how to act. Rumination and regret are things that unite us all. The track is released with funding from Koda Kultur.</p>
        
         <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/tfqkcgtz6knfx' }" />
       </Section>
@@ -18,7 +18,7 @@
         <p>
           Our single 'Sideways' is out! We're so stoked about this track as it marks a new turn for us. 
           <br>
-          Ominous lyrics combine with a danceable groove to form this track.
+          Ominous lyrics combine with a danceable groove to form this track. The track is released with funding from Koda Kultur.
         </p>
         <StreamPlayer dark :embedLink="{ 'src': 'https://song.link/pn2mq0cpwzk7c' }" />
       </Section>
